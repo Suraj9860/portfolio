@@ -1,0 +1,54 @@
+
+.logo{
+    font-size: 40px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+    transition: 0.3s ease;
+    text-decoration: none;
+}
+
+.logo:hover{
+    color: orangered;
+    text-shadow: 0 0 25px orangered,
+                 0 0 50px orangered;
+                 transform: scale(1.1);
+}
+
+span{
+    color: orangered;
+}
+
+body{
+    background-color: black;
+    backdrop-filter: blur(50px);
+}
+
+.img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.img img{
+    height: 250px;
+    width: 350px;
+    display: inline-block;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+
+.img img:hover{
+    transform: scale(1.1);
+    border: 2px solid orangered;
+    box-shadow: 0 0 25px orangered,
+                0 0 25px orangered;
+}
+
+p{
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    margin-top: 8px;
+}
