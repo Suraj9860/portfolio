@@ -13,7 +13,7 @@
 
         <nav class="navbar">
             <a href="#" class="active">Portfolio</a>
-            <a href="SM_cv.pdf" class="active">Resume</a>
+            <a href="Suraj_Molawade_cv.pdf" class="active">Resume</a>
             <a href="cf.html" class="active">Certification</a>
             <a href="https://github.com/Suraj9860" class="active">Github</a>
         </nav>
@@ -30,18 +30,18 @@
             <p>Welcome to my digital canvas where code meets creativity. Explore how I blend passion with precision to craft immersive web experiences</p>
         
             <div class="btn-box">
-                <button class="btn-1">Hire Me</button>
+                <a href=mailto:surajmolawade74@gmail.com class="btn-1">Email</a>
                 <a href="https://wa.me/09860140042" class="btn-2">Let's talk</a>
             </div>
         </div>
         <div class="img-box">
-            <img src="pflogo.jpg" alt="">
+            <img src="SM_logo.jpg" alt="" style="filter: drop-shadow(0 0 40px black);">
         </div>
     </section>
 
     <section class="about">
         <div class="about-img">
-            <img src="pflogo.jpg" alt="" style="height: 180px; width: 180px;">
+            <img src="SM_logo.jpg" alt="" style="height: 180px; width: 180px;">
         </div>
 
         <div class="about-content">
@@ -62,21 +62,22 @@ contribute to dynamic teams, while continuously expanding my knowledge in web de
     <section class="contact-form">
         <h2 class="contact-me">Contact<span>Me</span></h2>
 
-        <form action="#">
+        <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="6f18daa1-894a-41c2-8a3e-deef4ebeea9b">
 
             <div class="input-box">
-                <input type="text" placeholder="Full Name">
-                <input type="email" placeholder="Email">
+                <input type="text" name="first_name" placeholder="Full Name" required>
+                <input type="email" name="email" placeholder="Email" required>
             </div>
 
             <div class="input-box">
-                <input type="number" placeholder="Number">
-                <input type="text" placeholder="Subject">
+                <input type="number" name="phone" placeholder="Number" required>
+                <input type="text" name="subject" placeholder="Subject" required>
             </div>
 
-            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message">      
+            <textarea cols="30" name="textarea" rows="10" placeholder="Your Message">      
             </textarea>
-            <input type="submit" value="Send Message" class="btn-1">
+            <button type="submit" class="btn-1">Submit</button>
         </form>
 
     </section>
@@ -99,10 +100,10 @@ contribute to dynamic teams, while continuously expanding my knowledge in web de
                 <a href="#">About Me</a>
             </li>
             <li>
-                <a href="#">Contact</a>
+                <a href="https://wa.me/09860140042">Contact</a>
             </li>
             <li>
-                <a href="#">Privacy policy</a>
+                <a href="P_P.html">Privacy policy</a>
             </li>
         </ul>
 
