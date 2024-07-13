@@ -1,15 +1,87 @@
+body {
+    background-color:  rgba(0,0,0,0.8);;
+    font-family: 'Nunito', sans-serif;
+  }
 
-.logo{
-    font-size: 40px;
-    color: white;
+.cards {
     display: flex;
+    flex-direction: column;
+    gap: 15px;
     justify-content: center;
+    align-items: center;
+  }
+  
+  .cards .red {
+    background-image: url("/FED_cf.jpg");
+    background-size: cover;
+    border: 3px solid black;
+  }
+  
+  .cards .blue {
+    background-image: url("UI_UX_cf.jpg");
+    background-size: cover;
+    border: 3px solid black;
+  }
+  
+  .cards .green {
+    background-image: url("cf1.png");
+    background-size: cover;
+    border: 3px solid black;
+  }
+
+  .cards .yellow {
+    background-image: url("cf2.png");
+    background-size: cover;
+    border: 3px solid black;
+  }
+  
+  .cards .card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    height: 300px;
+    width: 450px;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    transition: 400ms;
+  }
+  
+  .cards .card p.tip {
+    font-size: 1em;
+    font-weight: 700;
+  }
+  
+  .cards .card p.second-text {
+    font-size: .7em;
+  }
+  
+  .cards .card:hover {
+    transform: scale(1.1, 1.1);
+  }
+  
+  .cards:hover > .card:not(:hover) {
+    filter: blur(10px);
+    transform: scale(0.9, 0.9);
+  }
+
+  .Certificate_name{
+    font-size: 1.5em;
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+  }
+
+  .Certificate_name{
+    font-size: 25px;
+    color: white;
     font-weight: 600;
     transition: 0.3s ease;
-    text-decoration: none;
 }
 
-.logo:hover{
+.Certificate_name:hover{
     color: orangered;
     text-shadow: 0 0 25px orangered,
                  0 0 50px orangered;
@@ -20,35 +92,16 @@ span{
     color: orangered;
 }
 
-body{
-    background-color: black;
-    backdrop-filter: blur(50px);
-}
-
-.img{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-.img img{
-    height: 250px;
-    width: 350px;
-    display: inline-block;
+::-webkit-scrollbar{
+  width: 15px;
   border-radius: 20px;
-  margin-top: 20px;
 }
-
-.img img:hover{
-    transform: scale(1.1);
-    border: 2px solid orangered;
-    box-shadow: 0 0 25px orangered,
-                0 0 25px orangered;
+::-webkit-scrollbar-thumb{
+  background-color: orangered;
+  border-radius: 20px;
 }
-
-p{
-    color: white;
-    text-align: center;
-    font-size: 25px;
-    margin-top: 8px;
+::-webkit-scrollbar-track{
+  background-color: rgba(0,0,0,0.60);
+  width: 50px;
+  border-radius: 20px;
 }
